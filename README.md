@@ -10,9 +10,29 @@ API : https://gitlab.com/simpleloc/api_simpleloc
 
 ![](https://i.imgur.com/BkTYqJm.png)
 
+---
 
+## Installation Locale
 
-## Installation
+### Installation API
+
+`git clone git@github.com:luca-montaigut/api_simpleloc.git`
+
+`cd api_simpleloc`
+
+`bundle install`
+
+`echo DEVISE_JWT_SECRET_KEY=\"$(rake secret)\" > .env`
+
+(You have to add your Cloudinary API keys too)
+
+`rails db:create && rails db:migrate`
+
+`rails s`
+
+Your API is now running on http://localhost:8080
+
+### Installation FRONT
 
 `git clone git@gitlab.com:simpleloc/front_simpleloc.git`
 
@@ -25,6 +45,8 @@ API : https://gitlab.com/simpleloc/api_simpleloc
 `npm start`
 
 Your website is now running on http://localhost:3000
+
+---
 
 ## Comptes tests
 
